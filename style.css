@@ -630,7 +630,7 @@ MEDIA QUERIES PARA MOVILES (PANTALLAS PEQUEÑAS)
     }
 
     .nav ul.nav-menu {
-        display: none;
+        display: none !important;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -640,6 +640,6 @@ MEDIA QUERIES PARA MOVILES (PANTALLAS PEQUEÑAS)
     }
 
     .menu-check:checked ~ .nav ul.nav-menu {
-        display: flex;
+        display: flex !important;
     }
 }
