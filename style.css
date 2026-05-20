@@ -551,8 +551,25 @@ MEDIA QUERIES PARA MOVILES (PANTALLAS PEQUEÑAS)
 @media (max-width: 576px) {
   /* Forzamos a que el menu del header se organize mejor en pantallas pequeñas*/
     header {
-        padding: 10px !important;
-        text-align: center;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 10px 15px !important;
+        position: relative;
+    }
+
+    .header .logo-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-grow: 1;
+        gap: 8px;
+    }
+
+    header .logo-container .logo-img {
+        width: 35px !important;
+        height: 35px !important;
+        border-radius: 50%;
     }
 
     .header ul {
