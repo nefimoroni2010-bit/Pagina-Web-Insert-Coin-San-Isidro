@@ -505,6 +505,10 @@ nav a:hover {
     background-color: #14121f;
 }
 
+.menu-check, .menu-burger {
+    display: none !important;
+}
+
 /*===============================================================
 MEDIA QUERIES PARA TABLETS (PANTALLAS MEDIANAS)
 =================================================================*/
@@ -621,15 +625,13 @@ MEDIA QUERIES PARA MOVILES (PANTALLAS PEQUEÑAS)
     }
 
     .menu-burger {
-        display: block;
+        display: block !important;
         font-size: 32px;
         color: white;
         cursor: pointer;
-        text-align: center;
-        padding-right: 20px;
     }
 
-    .nav ul.nav-menu {
+     ul.nav-menu {
         display: none !important;
         flex-direction: column;
         align-items: center;
@@ -637,6 +639,10 @@ MEDIA QUERIES PARA MOVILES (PANTALLAS PEQUEÑAS)
         background-color: #111;
         padding: 20px 0;
         gap: 15px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
     }
 
     .menu-check:checked ~ .nav ul.nav-menu {
